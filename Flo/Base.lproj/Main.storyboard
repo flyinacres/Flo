@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kp-tr-EkH" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="250" y="313" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="53z-8l-Tb2"/>
                                     <constraint firstAttribute="height" constant="100" id="5pB-gJ-v79"/>
@@ -31,6 +31,9 @@
                                         <color key="value" red="0.2945493493355037" green="0.87648762033202843" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VgX-ro-10G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tw-1d-u4I" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="275" y="480" width="50" height="50"/>
@@ -48,16 +51,56 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e0b-2V-SMQ"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJq-oO-sR2" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="185" y="75" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEa-Ya-nE5">
+                                        <rect key="frame" x="93" y="93" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="NpW-65-WGt"/>
+                                    <constraint firstAttribute="width" constant="230" id="prZ-8A-hRQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0Kp-tr-EkH" secondAttribute="centerX" id="0W8-QM-FLX"/>
-                            <constraint firstAttribute="centerY" secondItem="0Kp-tr-EkH" secondAttribute="centerY" id="b13-Jd-b0k"/>
+                            <constraint firstAttribute="centerX" secondItem="wJq-oO-sR2" secondAttribute="centerX" id="81g-2Z-sWI"/>
+                            <constraint firstItem="0Kp-tr-EkH" firstAttribute="top" secondItem="wJq-oO-sR2" secondAttribute="bottom" constant="8" id="NMU-1Q-XNp"/>
+                            <constraint firstAttribute="centerY" secondItem="0Kp-tr-EkH" secondAttribute="centerY" constant="-63" id="b13-Jd-b0k"/>
+                            <constraint firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="wJq-oO-sR2" secondAttribute="centerY" constant="115" id="eJW-tU-VDe"/>
                             <constraint firstAttribute="centerX" secondItem="9tw-1d-u4I" secondAttribute="centerX" id="gyD-mD-pvn"/>
                             <constraint firstAttribute="centerY" secondItem="9tw-1d-u4I" secondAttribute="centerY" constant="-205" id="oRl-kd-0Ak"/>
+                            <constraint firstItem="wJq-oO-sR2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="onX-fF-Wix"/>
+                            <constraint firstItem="0Kp-tr-EkH" firstAttribute="top" secondItem="wJq-oO-sR2" secondAttribute="bottom" constant="-50" id="xw3-w1-Qaf"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eJW-tU-VDe"/>
+                                <exclude reference="NMU-1Q-XNp"/>
+                                <exclude reference="xw3-w1-Qaf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="IEa-Ya-nE5" id="fT2-VP-STf"/>
+                        <outlet property="counterView" destination="wJq-oO-sR2" id="6J1-I9-2il"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
