@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -36,7 +36,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FyK-wC-ME3" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                    <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FyK-wC-ME3" customClass="GraphView" customModule="Flo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="25" width="300" height="250"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water Drunk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9W-JW-WYR" userLabel="Water Drunk">
@@ -69,6 +69,48 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-u0-foD" userLabel="Sunday">
+                                                <rect key="frame" x="26" y="205" width="26" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe6-EW-YaC" userLabel="Monday">
+                                                <rect key="frame" x="60" y="204" width="26" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wop-Oo-9D6" userLabel="Tuesday">
+                                                <rect key="frame" x="100" y="205" width="21" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs8-yW-j1g" userLabel="Wednesday">
+                                                <rect key="frame" x="142" y="204" width="28" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-jd-w6S" userLabel="Friday">
+                                                <rect key="frame" x="228" y="203" width="13" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80M-nt-8ej" userLabel="Saturday">
+                                                <rect key="frame" x="262" y="203" width="23" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9My-ON-alG" userLabel="Thursday">
+                                                <rect key="frame" x="187" y="204" width="22" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -92,7 +134,7 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kp-tr-EkH" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="250" y="313" width="100" height="100"/>
+                                <rect key="frame" x="250" y="333" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="53z-8l-Tb2"/>
                                     <constraint firstAttribute="height" constant="100" id="5pB-gJ-v79"/>
@@ -135,16 +177,18 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0Kp-tr-EkH" secondAttribute="centerX" id="0W8-QM-FLX"/>
                             <constraint firstAttribute="centerX" secondItem="twt-Jo-bmh" secondAttribute="centerX" id="EX3-KJ-CFT"/>
-                            <constraint firstAttribute="centerY" secondItem="0Kp-tr-EkH" secondAttribute="centerY" constant="-63" id="b13-Jd-b0k"/>
+                            <constraint firstAttribute="centerY" secondItem="0Kp-tr-EkH" secondAttribute="centerY" constant="-83" id="b13-Jd-b0k"/>
                             <constraint firstAttribute="centerY" secondItem="twt-Jo-bmh" secondAttribute="centerY" constant="100" id="evc-YL-kvn"/>
                             <constraint firstAttribute="centerX" secondItem="9tw-1d-u4I" secondAttribute="centerX" id="gyD-mD-pvn"/>
                             <constraint firstAttribute="centerY" secondItem="9tw-1d-u4I" secondAttribute="centerY" constant="-205" id="oRl-kd-0Ak"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="averageWaterDrunk" destination="ZUl-Ko-sYQ" id="sKC-62-TLg"/>
                         <outlet property="counterLabel" destination="IEa-Ya-nE5" id="fT2-VP-STf"/>
                         <outlet property="counterView" destination="wJq-oO-sR2" id="6J1-I9-2il"/>
                         <outlet property="graphView" destination="FyK-wC-ME3" id="HCf-WO-7SK"/>
+                        <outlet property="maxLabel" destination="OLS-En-Ikm" id="zog-zt-GeJ"/>
                         <outlet property="view" destination="twt-Jo-bmh" id="c7j-Bc-Sse"/>
                     </connections>
                 </viewController>
